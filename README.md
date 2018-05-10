@@ -27,4 +27,5 @@ This will fetch the latest version from this repo every time.
     --context-menu-bg: #333; /* color of context (right-click) menus. */
     --unread-color: #f00; /* color of unread/selected server indicators. */
     --annoyances: none; /* whether to show things like nitro tab in settings and social media links. "none" to hide, "block" to show. */
-}```
+}
+```
