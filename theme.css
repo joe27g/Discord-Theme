@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.6.1 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 html {
@@ -537,10 +537,11 @@ code.hljs.prolog:before {
 .theme-dark .hljs-comment, .theme-dark .hljs-quote {
     color: rgba(255,255,255,0.5);
 }
-.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline, .theme-dark .message-group .comment .markup pre code {
     background: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .message-group .comment .markup pre {
+.theme-dark .markup-2BOw-j pre {
+    background: transparent;
     border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .theme-dark .hljs-name, .theme-dark .hljs-section, .theme-dark .hljs-selector-class, .theme-dark .hljs-selector-id, .theme-dark .hljs-title {
@@ -1669,7 +1670,7 @@ button.addButton-pcyyf6:hover {
 .chat>.title-wrap.title-wrap-dark .topic a, .theme-dark .message-group a, .content-region a, .buttonLinkLink-PqcWoA,
 .modal-1UGdnR a:not(.bodyLink-3A8Buv), .theme-dark .chat .welcome-message a,
 .message-group .comment .attachment .upload>.filename,
-.theme-dark .topic-2QX7LI a, .theme-dark .welcomeMessage-3_Mcht a, a.anchor-3Z-8Bb {
+.theme-dark .topic-2QX7LI a, .theme-dark .welcomeMessage-3_Mcht a, a.anchor-3Z-8Bb, .theme-dark .markup-2BOw-j a {
     color: var(--link-color) !important;
 }
 .chat>.title-wrap.title-wrap-dark .topic a:hover, .theme-dark .message-group a:hover, .content-region a:hover, .buttonLinkLink-PqcWoA:hover,
