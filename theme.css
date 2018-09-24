@@ -65,6 +65,22 @@ body, .appMount-3VJmYg {
     background: rgba(255, 255, 255, 0.1) !important;
 }
 
+/* Payment Component found under billing */
+.theme-dark .paymentPane-3bwJ6A, .theme-dark .paginator-166-09, .theme-dark .payment-xT17Mq {
+    background: transparent;
+}
+.theme-dark .payment-xT17Mq {
+    transition: background-color 0.2s;
+}
+
+.theme-dark .payment-xT17Mq:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .expandedInfo-3kfShd {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
 /* Ctrl + K */
 .theme-dark .quickswitcher-3JagVE {
     background-color: var(--popup-background);
