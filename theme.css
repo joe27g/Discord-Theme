@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6.4 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.6.5 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -14,7 +14,8 @@ body, .appMount-3VJmYg {
 .theme-dark .ui-selectable-item, .side-8zPYf6 .item-PXvHYJ, .buttonRedOutlinedDefault-1VCgwL,
 .chat > .title-wrap.title-wrap-dark .topic a, .theme-dark .message-group a, .content-region a, .buttonLinkLink-PqcWoA, .modal-1UGdnR a,
 .upload-modal .footer .button, .overflowEllipsis-2JOaZ6, .region-select-modal .region-select-modal-option,
-.theme-dark .hasMore-3e72_v button, .channel-2QD9_O a, .listRow-hutiT_.flex-1O1GKY, .theme-dark .item-1Yvehc {
+.theme-dark .hasMore-3e72_v button, .channel-2QD9_O a, .listRow-hutiT_.flex-1O1GKY, .theme-dark .item-1Yvehc,
+.theme-dark .actionButton-2PeQbJ, .theme-light .actionButton-2PeQbJ, .modal-3HD5ck .regionSelect-3lf4eE button {
     transition: 150ms !important;
 }
 ::selection {
@@ -63,6 +64,55 @@ body, .appMount-3VJmYg {
 }
 .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.1) !important;
+}
+/* buttons */
+.form.deprecated .btn-primary, .channel-textarea-guard button, .private-channel-recipients-invite .footer button, #friends .btn,
+.wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8, .wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary,
+.headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD, .lookFilled-1Gx00P.colorBrand-3pXr91, .lookInverted-2D7oAl.colorBrand-3pXr91,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .headerButtonColor-G7_f-V, .button-3To2tQ,
+.lookInverted-2D7oAl.colorGreen-29iAKY, .buttonInvertedPurple-WtBglX, .lookFilled-1Gx00P.colorGreen-29iAKY,
+.detected-platform-accounts-modal .btn-group .btn-primary, .newMessagesBar-mujexs, 
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ, .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6, .lookOutlined-3sRXeN.colorBrand-3pXr91,
+.theme-dark .actionButton-2PeQbJ, .theme-light .actionButton-2PeQbJ {
+    background-color: var(--accent-color);
+    /*transition: filter 150ms;*/ /* causes flicker; tried and failed to find solution (that didn't fuck with hardware acceleration) */
+}
+.form.deprecated .btn-primary:hover, .buttonBrandFilledDefault-2Rs6u5:hover, .instantInviteModal-3vhcvC .copy:hover,
+.switchWrapperDefaultActive-2IdHq2:hover .switch-3wwwcV.checked-7qfgSb, .channel-textarea-guard button:hover, .button-3To2tQ:hover,
+#user-profile-modal .actions .btn.add-friend:hover, #friends .btn:hover, .wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8:hover,
+.wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary:hover, .headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD:hover,
+.private-channel-recipients-invite .footer button:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover,
+.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover,
+.theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover,
+.lookInverted-2D7oAl.colorGreen-29iAKY:hover, .buttonInvertedPurple-WtBglX:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover,
+.detected-platform-accounts-modal .btn-group .btn-primary:hover:not(:disabled),
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover, .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover, .newMessagesBar-mujexs:hover,
+.theme-dark .create-3jownz:hover .actionButton-2PeQbJ, .theme-light .create-3jownz:hover .actionButton-2PeQbJ {
+    background-color: var(--accent-color);
+    filter: brightness(1.3);
+}
+.buttonRedOutlinedDefault-1VCgwL:hover, .side-8zPYf6 .item-PXvHYJ.itemDanger-3m3dwx:hover {
+    background: rgba(255, 0, 0, 0.2);
+}
+/* checkboxes */
+.checkbox .checkbox-inner span {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+.checkbox .checkbox-inner input:checked+span, .checkbox-1ix_J3[style="background-color: rgb(114, 137, 218); border-color: rgb(114, 137, 218);"] {
+    background-color: var(--accent-color) !important;
+    border-color: transparent !important;
+}
+/* gray text / subtitles */
+.wrapper-O5i5-0 .instantInviteModal-3vhcvC .blurb-zsamaY,
+.wrapper-O5i5-0 .instantInviteModal-3vhcvC .expireText-34b09Y,
+.instantInviteModal-3vhcvC .checkbox .checkbox-inner+span,
+.form.deprecated .has-value .Select-placeholder,
+.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label,
+.has-value.Select--single>.Select-control .Select-value .Select-value-label,
+.instantInviteModal-3vhcvC-advanced .form-actions .btn-default,
+.theme-dark .subText-2Zhkkh, .theme-light .subText-2Zhkkh, .theme-dark .tab-1kx2RU,
+.theme-dark .yearlyNote-3CCz_7, .theme-dark .description-1W0DiL, .attendeeCTA-3ZZQWt {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* quick switcher (Ctrl + K) */
@@ -359,6 +409,9 @@ body, .appMount-3VJmYg {
 .icon-2shpbb {
     filter: hue-rotate(150deg);
 }
+.welcomeMessage-3_Mcht p {
+    color: rgba(255, 255, 255, 0.5);
+}
 
 /* invites */
 .theme-dark .invite-button {
@@ -555,49 +608,28 @@ code.hljs.prolog:before {
 }
 
 /* reacts */
-.theme-dark .reaction.reaction-me {
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
     background: transparent;
     box-shadow: inset 0 0 19px var(--accent-color); /* basically this sets opacity of accent color */
 }
-.theme-dark .reaction.reaction-me .reaction-count {
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* new server */
-.create-guild-container.deprecated, .create-guild-container.deprecated .create-or-join .form-inner, .region-select-modal {
-    background: var(--popup-background);
+/* server region picker */
+.regionSelectModal-12e-57 {
+    background-color: var(--popup-background);
 }
-.create-guild-container.deprecated .action {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 7px;
-}
-.region-select-modal .region-select-modal-option {
-    background: rgba(255, 255, 255, 0.1);
+.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
+    background-color: var(--popup-highlight);
     border: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
-.form.deprecated header,
-.create-guild-container.deprecated .action.create .action-header,
-.create-guild-container.deprecated .join-server .sample-link,
-.region-select-modal .region-select-modal-header {
+.regionSelectModal-12e-57 .regionSelectModalHeader-21khC1 {
     color: var(--accent-color);
 }
-.create-guild-container.deprecated .action .action-body {
+.regionSelectModal-12e-57 .regionSelectModalFooter-20C5iA {
     color: rgba(255, 255, 255, 0.5);
-}
-.create-guild-container.deprecated .action.create .action-icon {
-    filter: hue-rotate(-50deg) invert(.8);
-}
-.create-guild-container.deprecated .action:hover.create .btn {
-    background-color: var(--accent-color);
-}
-.create-guild-container.deprecated .action:hover.create .btn:not(:hover) {
-    filter: brightness(0.9);
-}
-.create-guild-container.deprecated .action.join .action-icon {
-    filter: hue-rotate(180deg) invert(.8);
-}
-.create-guild-container.deprecated .create-or-join .actions .or {
-    display: none;
 }
 
 /* create invite */
@@ -633,17 +665,6 @@ code.hljs.prolog:before {
 .instantInviteModalAdvanced-3qJETM .checkbox .checkbox-inner+span, .instantInviteModalAdvanced-3qJETM .Select .Select-option {
     color: rgba(255, 255, 255, 0.8);
 }
-.wrapper-O5i5-0 .instantInviteModal-3vhcvC .blurb-zsamaY,
-.wrapper-O5i5-0 .instantInviteModal-3vhcvC .expireText-34b09Y,
-.instantInviteModal-3vhcvC .checkbox .checkbox-inner+span,
-.form.deprecated .has-value .Select-placeholder,
-.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label,
-.has-value.Select--single>.Select-control .Select-value .Select-value-label,
-.instantInviteModal-3vhcvC-advanced .form-actions .btn-default,
-.theme-dark .subText-2Zhkkh, .theme-light .subText-2Zhkkh, .theme-dark .tab-1kx2RU,
-.theme-dark .yearlyNote-3CCz_7, .theme-dark .description-1W0DiL, .attendeeCTA-3ZZQWt {
-    color: rgba(255, 255, 255, 0.5);
-}
 .form-deprecated .Select-control .Select-arrow {
     top: 0px;
 }
@@ -663,35 +684,47 @@ code.hljs.prolog:before {
     color: var(--link-color);
 }
 
-/* create server */
-.create-guild-container.deprecated .form-inner {
-    background: transparent;
-}
-.create-guild-container.deprecated h5 {
+/* new server modal */
+.theme-dark .header-3ZP1MY, .theme-light .header-3ZP1MY,
+.theme-dark .create-3jownz .actionHeader-2CT5c7, .theme-light .create-3jownz .actionHeader-2CT5c7,
+.theme-light .title-2Dc-Cb {
     color: var(--accent-color);
 }
-.avatar-uploader-inner, .create-guild-container.deprecated .form-actions {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
+.theme-dark .action-1lSjCi, .theme-light .action-1lSjCi {
+    background: var(--popup-highlight);
 }
-.regionSelect-3lf4eE .regionSelectInner-24f4Ce {
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
+.theme-dark .create-3jownz .actionIcon-2IISM_, .theme-light .create-3jownz .actionIcon-2IISM_,
+.theme-dark .or-3THJsp, .theme-light .or-3THJsp,
+.theme-dark .join-33Tr-7 .actionIcon-2IISM_, .theme-light .join-33Tr-7 .actionIcon-2IISM_ {
+    filter: invert(0.8);
 }
-.regionSelect-3lf4eE button {
-    border: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
+.theme-dark .actionBody-1qj65C, .theme-light .actionBody-1qj65C,
+.theme-dark .description-QF3836, .theme-light .description-QF3836,
+.theme-dark .helpText-h3r3wC, .theme-dark .label-wQQoIq,
+.theme-light .helpText-h3r3wC, .theme-light .label-wQQoIq,
+.theme-dark .cancelButton-RGXhAE, .theme-light .cancelButton-RGXhAE,
+.avatar-uploader .size-info, .regionSelectName-2-2FWh {
+    color: rgba(255, 255, 255, 0.5);
 }
-.regionSelect-3lf4eE:hover button {
-    background: var(--accent-color);
+.cancelButton-RGXhAE:before {
+    filter: grayscale(1);
 }
-.form.deprecated .control-group input[type=email], .form.deprecated .control-group input[type=number], .form.deprecated .control-group input[type=password], .form.deprecated .control-group input[type=text], .form.deprecated .control-group textarea {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0 5px;
+.theme-light .footer-2yfCgX {
+    box-shadow: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.modal-3HD5ck .regionSelect-3lf4eE button {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: none;
+}
+.modal-3HD5ck .regionSelect-3lf4eE:hover button {
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+.theme-dark .input-cIJ7To {
+    padding: 0 8px;
     border-radius: 5px;
     color: #fff;
-    border: none !important;
 }
 
 /* keyboard shortcuts */
@@ -777,43 +810,6 @@ code.hljs.prolog:before {
     color: #fff;
 }
 
-/* buttons */
-.form.deprecated .btn-primary, .channel-textarea-guard button, .private-channel-recipients-invite .footer button, #friends .btn,
-.wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8, .wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary,
-.headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD, .lookFilled-1Gx00P.colorBrand-3pXr91, .lookInverted-2D7oAl.colorBrand-3pXr91,
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .headerButtonColor-G7_f-V, .button-3To2tQ,
-.lookInverted-2D7oAl.colorGreen-29iAKY, .buttonInvertedPurple-WtBglX, .lookFilled-1Gx00P.colorGreen-29iAKY,
-.detected-platform-accounts-modal .btn-group .btn-primary, .newMessagesBar-mujexs,
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ, .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6, .lookOutlined-3sRXeN.colorBrand-3pXr91 {
-    background-color: var(--accent-color);
-    /*transition: filter 150ms;*/ /* causes flicker; tried and failed to find solution (that didn't fuck with hardware acceleration) */
-}
-.form.deprecated .btn-primary:hover, .buttonBrandFilledDefault-2Rs6u5:hover, .instantInviteModal-3vhcvC .copy:hover,
-.switchWrapperDefaultActive-2IdHq2:hover .switch-3wwwcV.checked-7qfgSb, .channel-textarea-guard button:hover, .button-3To2tQ:hover,
-#user-profile-modal .actions .btn.add-friend:hover, #friends .btn:hover, .wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8:hover,
-.wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary:hover, .headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD:hover,
-.private-channel-recipients-invite .footer button:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover,
-.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover,
-.theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover,
-.lookInverted-2D7oAl.colorGreen-29iAKY:hover, .buttonInvertedPurple-WtBglX:hover, .lookFilled-1Gx00P.colorGreen-29iAKY:hover,
-.detected-platform-accounts-modal .btn-group .btn-primary:hover:not(:disabled),
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover, .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover, .newMessagesBar-mujexs:hover {
-    background-color: var(--accent-color);
-    filter: brightness(1.3);
-}
-.buttonRedOutlinedDefault-1VCgwL:hover, .side-8zPYf6 .item-PXvHYJ.itemDanger-3m3dwx:hover {
-    background: rgba(255, 0, 0, 0.2);
-}
-
-/* checkboxes */
-.checkbox .checkbox-inner span {
-    border-color: rgba(255, 255, 255, 0.5) !important;
-}
-.checkbox .checkbox-inner input:checked+span, .checkbox-1ix_J3[style="background-color: rgb(114, 137, 218); border-color: rgb(114, 137, 218);"] {
-    background-color: var(--accent-color) !important;
-    border-color: transparent !important;
-}
-
 /* guild list */
 .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
     background-color: rgba(255, 255, 255, 0.1) !important;
@@ -859,7 +855,7 @@ code.hljs.prolog:before {
     box-shadow: 0 0 0 3px rgba(240, 71, 71, 0.3);
 }
 
-/* dhannel list / DM list */
+/* channel list / DM list */
 .channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
     background: rgba(255, 255, 255, 0.06);
 }
@@ -1617,7 +1613,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 
 /* channel settings */
-.theme-dark .item-3T2z1R, .ui-region-selector.ui-input-button {
+.theme-dark .item-3T2z1R {
 	border-width: 2px;
 }
 .theme-dark .passthroughSelected-1Eq0Kl, .theme-dark .markDash-3hAolZ {
@@ -1710,8 +1706,31 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 
 /* search */
-.search-popout {
-    background: var(--popup-background);
+.theme-dark .container-3ayLPN {
+    background-color: var(--popup-background);
+}
+.theme-dark .resultsGroup-r_nuzN .header-2N-gMV, .theme-dark .resultsGroup-r_nuzN .plusIcon-v0BTrL, .theme-dark .resultsGroup-r_nuzN .searchClearHistory-2cSSMO, .theme-dark .resultsGroup-r_nuzN .searchLearnMore-3SQUAj a,
+.theme-dark .searchOption-zQ-1l6 .filter-3Y_im- {
+    color: rgba(255, 255, 255, 0.7);
+}
+.theme-dark .searchOption-zQ-1l6 .answer-1n6g43 {
+    color: rgba(255, 255, 255, 0.4);
+}
+.theme-dark .option-96V44q:after, .theme-dark .option-96V44q.selected-rZcOL-:after {
+    background: none;
+}
+.theme-dark .resultsGroup-r_nuzN .searchLearnMore-3SQUAj a {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+.theme-dark .option-96V44q.selected-rZcOL-,
+.theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .searchFilter-2ESiM3 {
+    margin-right: 2px;
+}
+.theme-dark .focused-2bY0OD {
+    background-color: var(--popup-highlight);
 }
 .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker, .theme-light .calendarPicker-2yf6Ci .react-datepicker,
 .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__header, .theme-light .calendarPicker-2yf6Ci .react-datepicker__header,
@@ -1721,35 +1740,12 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .search-results-wrap .channel-separator .channel-name {
     margin-left: 20px;
 }
-.theme-dark .search-results-wrap .search-result .hit,
-.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: none;/*0 0 10px 6px rgba(255, 255, 255, 0.1);*/
-    border: none !important;
-}
-.theme-dark .search-results-wrap .search-result:before {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.theme-dark .search-results-wrap .search-result:after {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.search-popout .option:after, .search-popout .date-picker .date-picker-hint {
-    display: none;
-}
-.search-popout .results-group:before,
 .theme-dark .theme-light .ui-calendar-picker .react-datepicker__day, .theme-light .ui-calendar-picker .react-datepicker__day,
 .theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
 .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
 .theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day,
 .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day {
     border-color: rgba(255, 255, 255, 0.2);
-}
-.search-popout .option.selected, .theme-dark .search-results-wrap {
-    background-color: rgba(255, 255, 255, 0.03);
 }
 .theme-dark .theme-light .ui-calendar-picker .react-datepicker__day, .theme-light .ui-calendar-picker .react-datepicker__day,
 .search-popout .option strong, .search-popout .option .non-text, .search-popout .search-option .filter,
@@ -1797,9 +1793,6 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 .search-popout .date-picker {
     border: none;
-}
-.search-popout .search-option .answer, .search-popout .option .answer {
-    color: #fff;
 }
 
 /* links */
@@ -1915,10 +1908,11 @@ video.ready-36e6Vk {
 
 /* activity section */
 .theme-dark .card-7JP0BX, .theme-dark .header-1RC2Wb, .theme-dark .card-7JP0BX:hover .header-1RC2Wb,
-.carousel-JbsNzL {
+.carousel-JbsNzL, .carousel-2WxMes {
     background: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .body-SKIE6r, .theme-dark .activityFeed-28jde9, .theme-dark .lfg-3xoFkI {
+.theme-dark .body-SKIE6r, .theme-dark .activityFeed-28jde9, .theme-dark .lfg-3xoFkI,
+.theme-dark .paginationItem-2lUq0s:after, .theme-light .wrapper-2ZbzR9 {
     background: transparent;
 }
 .article-3kb3qm {
@@ -1971,6 +1965,56 @@ video.ready-36e6Vk {
 .botTag-2WPJ74, .botTagInvert-18-95s {
     background: var(--tag-bg);
     color: var(--tag-color) !important;
+}
+
+/* game library / downloads */
+.theme-dark .root-1BQpZw, .theme-dark .root-26DmKJ {
+    background-color: transparent;
+}
+.theme-dark .topPill-30KHOu .itemSelected-1qLhcL {
+    background-color: var(--accent-color);
+    color: #fff;
+    transition: 150ms;
+}
+.theme-dark .topPill-30KHOu .item-PXvHYJ:hover:not(.itemSelected-1qLhcL) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.theme-dark .gameUpdates-2GPqBU {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.theme-dark .applicationTile-1Goy1W {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .tile-367QuY:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+.theme-dark .purchaseUnitOperatingSystem-cnbJPz, .theme-light .purchaseUnitOperatingSystem-cnbJPz {
+    color: rgba(255, 255, 255, 0.5);
+}
+.progress-5tMCVk.small-4dgL9e[style="background-color: rgb(24, 25, 28);"] {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.progressBar-3zryPV.small-4dgL9e[style*="background-color: rgb(79, 84, 92);"] {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.theme-dark .progressCellText-3avmMz, .theme-dark .rate-1Gat8e,
+.theme-dark .icon-1IKq3C, .theme-dark .textCell-1aBIUP {
+    color: rgba(255, 255, 255, 0.5);
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    transition: 150ms;
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    filter: brightness(1.3);
+}
+.circleBackground-OqqxHM {
+    fill: rgba(255, 255, 255, 0.2);
+    stroke: rgba(255, 255, 255, 0.2);
 }
 
 :root {
