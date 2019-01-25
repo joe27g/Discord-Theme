@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6.5 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.6.6 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -6,11 +6,11 @@ html {
     background: var(--bg) !important;
     background-size: cover !important;
 }
-body, .appMount-3VJmYg {
+body, .appMount-3lHmkl {
     background: var(--bg-overlay) !important;
     margin: 0;
 }
-.action-buttons *, .contentDefaultText-3vZplL, .marginReset-3RfdVe+div, #user-profile-modal .guilds .guild,
+.actionButtons-14P9IC *, .contentDefaultText-3vZplL, .marginReset-3RfdVe+div, #user-profile-modal .guilds .guild,
 .theme-dark .ui-selectable-item, .side-8zPYf6 .item-PXvHYJ, .buttonRedOutlinedDefault-1VCgwL,
 .chat > .title-wrap.title-wrap-dark .topic a, .theme-dark .message-group a, .content-region a, .buttonLinkLink-PqcWoA, .modal-1UGdnR a,
 .upload-modal .footer .button, .overflowEllipsis-2JOaZ6, .region-select-modal .region-select-modal-option,
@@ -24,19 +24,19 @@ body, .appMount-3VJmYg {
 /* backgrounds + scrollbars */
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
 .channels-wrap, .theme-dark .members-1998pB, .container-PNkimc,
-.theme-dark .friends-table, .theme-dark .guildsWrapper-5TJh6A,
-.theme-dark #friends, .theme-dark .headerBar-UHpsPw,
+.theme-dark .friendsTable-133bsv, .theme-dark .guildsWrapper-5TJh6A,
+.theme-dark .container-3gCOGc, .theme-dark .headerBar-UHpsPw,
 
-.appMount-3VJmYg, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
+.appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
 .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .activityFeed-HeiGwL,
 .themeDark-3Ap_7i,
 
-.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece,
+.theme-dark .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd .messages-3amgkR::-webkit-scrollbar-track-piece,
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece,
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece,
 .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
@@ -45,18 +45,18 @@ body, .appMount-3VJmYg {
 .app-19_DXt > [style="position: absolute; width: 100%; height: 100%; background-color: rgb(47, 49, 54);"] {
     background: transparent !important;
 }
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
-.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece,
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
-.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb,
-.scroller-wrap .scroller::-webkit-scrollbar-thumb,
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece,
-.scroller-wrap .scroller::-webkit-scrollbar-thumb, .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+.theme-dark .friendsTable-133bsv .scroller-wrap ::-webkit-scrollbar-track-piece,
+.theme-dark .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd .messages-3amgkR::-webkit-scrollbar-track-piece,
+.theme-dark .friendsTable-133bsv .scroller-wrap ::-webkit-scrollbar-thumb,
+.theme-dark .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd .messages-3amgkR::-webkit-scrollbar-thumb,
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece,
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
     border-color: transparent;
 }
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
-.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb,
-.scroller-wrap .scroller::-webkit-scrollbar-thumb,
+.theme-dark .friendsTable-133bsv .scroller-wrap ::-webkit-scrollbar-thumb,
+.theme-dark .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd .messages-3amgkR::-webkit-scrollbar-thumb,
+.scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
@@ -66,7 +66,7 @@ body, .appMount-3VJmYg {
     background: rgba(255, 255, 255, 0.1) !important;
 }
 /* buttons */
-.form.deprecated .btn-primary, .channel-textarea-guard button, .private-channel-recipients-invite .footer button, #friends .btn,
+.form.deprecated .btn-primary, .channel-textarea-guard button, .private-channel-recipients-invite .footer button, .container-3gCOGc .btn,
 .wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8, .wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary,
 .headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD, .lookFilled-1Gx00P.colorBrand-3pXr91, .lookInverted-2D7oAl.colorBrand-3pXr91,
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .headerButtonColor-G7_f-V, .button-3To2tQ,
@@ -79,7 +79,7 @@ body, .appMount-3VJmYg {
 }
 .form.deprecated .btn-primary:hover, .buttonBrandFilledDefault-2Rs6u5:hover, .instantInviteModal-3vhcvC .copy:hover,
 .switchWrapperDefaultActive-2IdHq2:hover .switch-3wwwcV.checked-7qfgSb, .channel-textarea-guard button:hover, .button-3To2tQ:hover,
-#user-profile-modal .actions .btn.add-friend:hover, #friends .btn:hover, .wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8:hover,
+#user-profile-modal .actions .btn.add-friend:hover, .container-3gCOGc .btn:hover, .wrapper-O5i5-0 .instantInviteModal-3vhcvC .copy-3nFbq8:hover,
 .wrapper-O5i5-0 .instantInviteModalAdvanced-3qJETM .form-actions .btn-primary:hover, .headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD:hover,
 .private-channel-recipients-invite .footer button:hover, .lookFilled-1Gx00P.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover,
 .theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover,
@@ -136,24 +136,24 @@ body, .appMount-3VJmYg {
 }
 
 /* friends */
-.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary,
-.theme-dark #friends .friends-table .friends-row:hover,
-.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+.theme-dark .container-3gCOGc .tabBar-1E2ExX .item-PXvHYJ.primary-3j8BhM,
+.theme-dark .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover,
+.theme-dark .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9 {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
+.theme-dark .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover,
-.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
+.theme-dark .container-3gCOGc .headerBar-UHpsPw .tabBar-1E2ExX .item-PXvHYJ:hover,
+.theme-dark .container-3gCOGc .tabBar-1E2ExX .item-PXvHYJ.primary-3j8BhM:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.theme-dark #friends .tab-bar .tab-bar-item.selected,
-.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+.theme-dark .container-3gCOGc .tabBar-1E2ExX .item-PXvHYJ.selected-3s45Ha,
+.theme-dark .container-3gCOGc .tabBar-1E2ExX .item-PXvHYJ.primarySelected-3uHKZn {
     background-color: var(--accent-color);
     color: #fff;
 }
-.theme-dark #friends .friends-table .friends-row+.friends-row {
+.theme-dark .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud+.friendsRow-2yicud {
     border-top: 3px solid rgba(255, 255, 255, 0.1);
 }
 .btn-friends svg {
@@ -369,7 +369,7 @@ body, .appMount-3VJmYg {
 .theme-dark .divider-3gKybi.dividerRed-MKoLlr>span {
     color: var(--accent-color);
 }
-.messages-3amgkR.scroller {
+.messages-3amgkR.scroller-2FKFPG {
     margin-bottom: 30px;
 }
 .edited-DL9ECl {
@@ -403,7 +403,7 @@ body, .appMount-3VJmYg {
 }
 
 /* welcome message */
-.app .welcomeMessage-3_Mcht h1 {
+.app-2rEoOp .welcomeMessage-3_Mcht h1 {
     color: var(--accent-color);
 }
 .icon-2shpbb {
@@ -670,7 +670,7 @@ code.hljs.prolog:before {
 }
 
 /* accept invite */
-.inviteModal-34DdOm .scroller {
+.inviteModal-34DdOm .scroller-2FKFPG {
     background-color: var(--popup-background);
     background-image: url(https://i.imgur.com/y5Of6et.png);
 }
@@ -1632,7 +1632,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
     background: transparent;
     box-shadow: none;
 }
-.theme-dark .search-results-wrap .action-buttons .jump-button:hover > div, .theme-dark .jumpButton-3DTcS_:hover > div {
+.theme-dark .searchResultsWrap-2DKFzt .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover > div, .theme-dark .jumpButton-3DTcS_:hover > div {
     color: #fff;
 }
 .theme-dark .hasMore-3e72_v button {
@@ -1643,7 +1643,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .hasMore-3e72_v button:hover {
     color:  #fff;
 }
-.theme-dark .searchBar-1MOL6S, .theme-dark .search-results-wrap .action-buttons .jump-button, .theme-dark .jumpButton-3DTcS_ {
+.theme-dark .searchBar-1MOL6S, .theme-dark .searchResultsWrap-2DKFzt .actionButtons-14P9IC .jumpButton-Ia2hRJ, .theme-dark .jumpButton-3DTcS_ {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug .closeButton-17RIVZ:hover {
@@ -1677,16 +1677,16 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
     color: #fff !important;
 }
 
-/* tooltips */
-.tooltip, .theme-dark .bubble-3we2di {
+/* tooltips tooltips-FhwIyl */
+.tooltip-1OS-Ti, .theme-dark .bubble-3we2di {
     background: var(--context-menu-bg) !important;
-} .tooltip.tooltip-top:after, .theme-dark .bubble-3we2di:before {
+} .tooltip-1OS-Ti.top-1pTh1F:after, .theme-dark .bubble-3we2di:before {
     border-top-color: var(--context-menu-bg) !important;
-} .tooltip.tooltip-right:after {
+} .tooltip-1OS-Ti.right-KM_vfY:after {
     border-right-color: var(--context-menu-bg) !important;
-} .tooltip.tooltip-bottom:after {
+} .tooltip-1OS-Ti.bottom-19kp6S:after {
     border-bottom-color: var(--context-menu-bg) !important;
-} .tooltip.tooltip-left:after {
+} .tooltip-1OS-Ti.left-1wV7VO:after {
     border-left-color: var(--context-menu-bg) !important;
 }
 .slider-bar-fill {
@@ -1732,64 +1732,80 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .focused-2bY0OD {
     background-color: var(--popup-highlight);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker, .theme-light .calendarPicker-2yf6Ci .react-datepicker,
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__header, .theme-light .calendarPicker-2yf6Ci .react-datepicker__header,
-.theme-dark .search-results-wrap .channel-separator .channel-name {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker, .calendarPicker-2yf6Ci .react-datepicker,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .calendarPicker-2yf6Ci .react-datepicker__header,
+.theme-dark .searchResultsWrap-2DKFzt .channelSeparator-1X1FuH .channelName-1QajIf {
     background: transparent;
 }
-.theme-dark .search-results-wrap .channel-separator .channel-name {
+.theme-dark .searchResultsWrap-2DKFzt .channelSeparator-1X1FuH::before {display: none;}
+.theme-dark .searchResultsWrap-2DKFzt .channelSeparator-1X1FuH .channelName-1QajIf {
     margin-left: 20px;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day, .theme-light .ui-calendar-picker .react-datepicker__day,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
-.theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day,
-.theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day, .calendarPicker-2yf6Ci .react-datepicker__day,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type,
+.calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day,
+.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day {
     border-color: rgba(255, 255, 255, 0.2);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day, .theme-light .ui-calendar-picker .react-datepicker__day,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day, .calendarPicker-2yf6Ci .react-datepicker__day,
 .search-popout .option strong, .search-popout .option .non-text, .search-popout .search-option .filter,
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__current-month, .theme-light .calendarPicker-2yf6Ci .react-datepicker__current-month,
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day-name, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day-name {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__current-month, .calendarPicker-2yf6Ci .react-datepicker__current-month,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day-name, .calendarPicker-2yf6Ci .react-datepicker__day-name {
     color: rgba(255, 255, 255, 0.5);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled:hover,
-.theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled,
-.theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled:hover {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
     color: rgba(255, 255, 255, 0.15);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after,
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day:hover, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day:hover {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after, .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover, .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .calendarPicker-2yf6Ci .react-datepicker__day:hover {
     background-color: var(--accent-color);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day, .calendarPicker-2yf6Ci .react-datepicker__day {
     border-left-color: var(--accent-color);
     border-top-color: var(--accent-color);
     color: #fff;
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day, .theme-light .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day, .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day {
     border-bottom-color: var(--accent-color);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type, .theme-light .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type, .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type {
     border-right-color: var(--accent-color);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--outside-month,
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .calendarPicker-2yf6Ci .react-datepicker__day--outside-month,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover, .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.3);
 }
-.theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next, .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous, .theme-light .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next, .theme-light .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous {
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous, .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next, .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous {
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next:hover,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous:hover,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next:hover,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous:hover,
-.theme-dark .search-results-wrap .search-header, .theme-dark .search-results-wrap .action-buttons .jump-button:hover,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next:hover,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous:hover,
+.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next:hover,
+.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous:hover,
+.theme-dark .searchResultsWrap-2DKFzt .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover,
 .theme-dark .jumpButton-3DTcS_:hover {
     background-color: rgba(255, 255, 255, 0.15);
+}
+.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.theme-dark .searchResultsWrap-2DKFzt {
+    background-color: var(--popout-background);
+}
+.theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA {
+    background-color: rgba(255, 255, 255, 0.05);
+	box-shadow: none;
+	border: none;
+}
+.theme-dark .searchResult-3pzFAB::after,
+.theme-dark .searchResult-3pzFAB::before {
+	display: none;
 }
 .search-popout .date-picker {
     border: none;
