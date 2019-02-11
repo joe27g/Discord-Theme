@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6.6 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.6.7 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -1015,7 +1015,8 @@ svg.linkButtonIcon-Mlm5d6 {
     border: none;
     margin: 0 3px 3px 0;
 }
-.status, .theme-dark .status-2s6iDp, .channel-2QD9_O.selected-1HYmZZ .status-1ibiUI, .channel-2QD9_O .status-1ibiUI {
+.status, .theme-dark .status-2s6iDp, .theme-dark .status-2kJpnA, .theme-light .status-2kJpnA,
+.channel-2QD9_O.selected-1HYmZZ .status-1ibiUI, .channel-2QD9_O .status-1ibiUI {
     border: none !important;
 }
 .theme-dark .status-2s6iDp {
@@ -1419,7 +1420,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .user-settings-games .game-name-input:focus, .theme-dark .user-settings-games .game-name-input:hover,
 .theme-dark .cardPrimary-1Hv-to, .theme-dark .cardPrimaryEditable-3KtE4g, .switch-3wwwcV, .theme-dark .cardPrimaryOutline-29Ujqw,
 .theme-dark .bar-2Qqk5Z, .theme-dark .accountBtnInner-sj5jLs, .theme-dark .card-FDVird:before, .theme-dark .button-mM-y8i,
-.userSettingsVoice-iwdUCU .media-engine-video, .inner-2Y6JuD {
+.userSettingsVoice-iwdUCU .media-engine-video, .inner-2Y6JuD, .avatarUploaderInner-3UNxY3 {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
 }
@@ -1457,7 +1458,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .input-cIJ7To:focus {
     border-color: var(--accent-color);
 }
-.theme-dark .avatar-uploader-indicator {
+.theme-dark .avatarUploaderHint-3SN212 {
     filter: invert(.9);
 }
 .image-z8whH4 {
