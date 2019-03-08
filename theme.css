@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6.7 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.6.8 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -24,7 +24,7 @@ body, .appMount-3lHmkl {
 /* backgrounds + scrollbars */
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
 .channels-wrap, .theme-dark .members-1998pB, .container-PNkimc,
-.theme-dark .friendsTable-133bsv, .theme-dark .guildsWrapper-5TJh6A,
+.theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z,
 .theme-dark .container-3gCOGc, .theme-dark .headerBar-UHpsPw,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
@@ -811,10 +811,10 @@ code.hljs.prolog:before {
 }
 
 /* guild list */
-.theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
+.theme-dark .container-2td-dC .wrapper-2lTRaf {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
-.theme-dark .guild-1EfMGQ.unread-qLkInr:not(.selected-ML3OIq):before {
+.theme-dark .container-2td-dC.unread-2OHH1w:not(.selected-nT-gM3):before {
     background: transparent;
     opacity: 0.5;
     height: 50px;
@@ -830,10 +830,10 @@ code.hljs.prolog:before {
     /* background: -webkit-radial-gradient(transparent 15px, #f00 25px, transparent 40px); */
     box-shadow: inset 0 0 12px 2px var(--unread-color);
 }
-.theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
+.theme-dark .container-2td-dC.selected-nT-gM3:before {
     background-color: var(--unread-color);
 }
-.theme-dark .guild-1EfMGQ.unread-qLkInr:hover::before {
+.theme-dark .container-2td-dC.unread-2OHH1w:hover::before {
     border-radius: 15px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -1137,9 +1137,9 @@ svg.linkButtonIcon-Mlm5d6 {
     background: rgba(0, 0, 0, 0.1) !important;
     border: none;
 }
-.theme-dark .guildsWrapper-5TJh6A .guildsAdd-21_IdK {
+.theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig {
     left: 273px;
-    bottom: 15px;
+    bottom: 5px;
     background: transparent;
     box-shadow: none;
     height: auto;
@@ -1148,13 +1148,13 @@ svg.linkButtonIcon-Mlm5d6 {
     border: none;
     z-index: 100;
 }
-.theme-dark .guildsWrapper-5TJh6A .guildsAdd-21_IdK:hover .guildsAddInner-1KMFy- {
+.theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig:hover .plus-3UqSQu {
     color: #fff;
 }
-.theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr {
+.theme-dark .wrapper-1Rf91z, .channels-Ie2l6A.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr {
     height: calc(100vh - 93px);
 }
-.theme-dark .guildsWrapper-5TJh6A span.guildsAddInner-1KMFy- {
+.theme-dark .wrapper-1Rf91z span.plus-3UqSQu {
     font-size: 32px;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -1928,7 +1928,7 @@ video.ready-36e6Vk {
 .carousel-JbsNzL, .carousel-2WxMes {
     background: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .body-SKIE6r, .theme-dark .activityFeed-28jde9, .theme-dark .lfg-3xoFkI,
+.theme-dark .body-SKIE6r, .theme-dark .activityFeed-1C0EmJ, .theme-dark .lfg-3xoFkI,
 .theme-dark .paginationItem-2lUq0s:after, .theme-light .wrapper-2ZbzR9 {
     background: transparent;
 }
