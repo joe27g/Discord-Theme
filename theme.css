@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.7.0 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.1 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -243,27 +243,27 @@ body, .appMount-3lHmkl {
 .emojiPicker-3m1S-j, .emojiPicker-3m1S-j .stickyHeader-1SS0JU {
     background: var(--popup-background);
 }
-.search-bar.search-bar-light {
+.searchBar-2_Yu-C.searchBarLight-1NxoDG {
     background: transparent;
 }
-.emojiPicker-3m1S-j .category-2U57w6, .search-bar.search-bar-light input::-webkit-input-placeholder {
+.emojiPicker-3m1S-j .category-2U57w6, .searchBar-2_Yu-C.searchBarLight-1NxoDG input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
-.search-bar.search-bar-light .search-bar-inner {
+.searchBar-2_Yu-C .searchBarInner-1_Tg2R {
     background: transparent;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
-.search-bar.search-bar-light input, .theme-brand .contentTitle-2tG_sM strong, .theme-brand .content-Qb0rXO {
+.searchBar-2_Yu-C.searchBarLight-1NxoDG input, .theme-brand .contentTitle-2tG_sM strong, .theme-brand .content-Qb0rXO {
     color: #fff;
 }
-.search-bar-light .search-bar-icon .icon.visible {
+.searchBarLight-1NxoDG .searchBarIcon-1J6sKG .icon-3cZ1F_.visible-3V0mGj {
     opacity: 1;
-    filter: brightness(1.3);
-}
-.search-bar-light:hover .search-bar-icon .icon.visible {
     filter: brightness(2);
 }
-.search-bar.search-bar-light:hover .search-bar-inner, .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected {
+.searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
+    border-width: 2px;
+}
+.searchBar-2_Yu-C.searchBarLight-1NxoDG:hover .searchBarInner-1_Tg2R, .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected {
     border-bottom-color: var(--accent-color);
 }
 .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq {
