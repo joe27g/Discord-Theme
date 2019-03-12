@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.6.7 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.0 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -23,9 +23,9 @@ body, .appMount-3lHmkl {
 }
 /* backgrounds + scrollbars */
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
-.channels-wrap, .theme-dark .members-1998pB, .container-PNkimc,
-.theme-dark .friendsTable-133bsv, .theme-dark .guildsWrapper-5TJh6A,
-.theme-dark .container-3gCOGc, .theme-dark .headerBar-UHpsPw,
+.channels-wrap, .theme-dark .members-1998pB,
+.theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z,
+.theme-dark .container-3gCOGc,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
@@ -183,7 +183,7 @@ body, .appMount-3lHmkl {
     padding-top: 0;
     margin: 12px;
 }
-.pickerButtons-v-PPYK {
+.buttons-205you {
     margin-right: 25px;
 }
 .theme-dark .inner-zqa7da {
@@ -810,37 +810,41 @@ code.hljs.prolog:before {
     color: #fff;
 }
 
-/* guild list */
-.theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+/* guild list (server list) */
+.wrapper-1Rf91z {
+    margin-bottom: 70px;
 }
-.theme-dark .guild-1EfMGQ.unread-qLkInr:not(.selected-ML3OIq):before {
-    background: transparent;
-    opacity: 0.5;
+.scroller-2TZvBN {
+    background: rgba(255, 255, 255, 0.05);
+}
+.scroller-2FKFPG > div[class=""] {
+    position: fixed;
+    bottom: 0;
     height: 50px;
     width: 50px;
-    left: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin-top: 0;
-    border-radius: 50%;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    /* box-shadow: 16px -16px 10px -14px #f00; */
-    /* background: -webkit-radial-gradient(transparent 15px, #f00 25px, transparent 40px); */
-    box-shadow: inset 0 0 12px 2px var(--unread-color);
+    margin-left: -10px;
+    padding: 10px;
 }
-.theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
-    background-color: var(--unread-color);
+.scroller-2FKFPG > div[class=""] > div, .scroller-2FKFPG > div[class=""] + div > div {
+    background-color: var(--accent-color);
+    border:  none;
+    color:  #fff;
+    box-shadow: 0 0 19px #000;
 }
-.theme-dark .guild-1EfMGQ.unread-qLkInr:hover::before {
-    border-radius: 15px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    transition: border-radius 150ms;
+.theme-dark .wrapper-2lTRaf {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.theme-dark .unread-2OHH1w:before {
+    background: var(--unread-color);
+}
+.theme-dark .selected-nT-gM3:before {
+    background: var(--unread-color);
 }
 
 /* member list */
+.theme-dark .members-1998pB {
+    background: rgba(255, 255, 255, 0.02);
+}
 .theme-dark .member-3W1lQa.popout-open .content-OzHfo4,
 .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4,
 .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
@@ -855,7 +859,23 @@ code.hljs.prolog:before {
     box-shadow: 0 0 0 3px rgba(240, 71, 71, 0.3);
 }
 
+/* header / title bars */
+.theme-dark .headerBar-UHpsPw {
+    background: rgba(255, 255, 255, 0.05);
+}
+.hasDropdown-2invhV.container-2Rl01u, .hasDropdown-2invhV .header-2o-2hj {
+    background: rgba(255, 255, 255, 0.015);
+}
+.titleBar-AC4pGV {
+    margin-top: 0px;
+    padding-top: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* channel list / DM list */
+.container-PNkimc {
+    background: rgba(255, 255, 255, 0.02);
+}
 .channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
     background: rgba(255, 255, 255, 0.06);
 }
@@ -1124,17 +1144,11 @@ svg.linkButtonIcon-Mlm5d6 {
 
 /* user settings area */
 .container-2Thooq {
-    width: 250px;
-    padding-right: 40px;
-    padding-left: 20px;
-    margin-left: -70px;
-    position: absolute;
-    bottom: 0px;
     height: 70px;
-    position: fixed;
+    margin-bottom: -1px;
 }
-.container-2Thooq, .container-1UB9sr {
-    background: rgba(0, 0, 0, 0.1) !important;
+.container-2Thooq, .scroller-2FKFPG > div[class=""] {
+    background: rgba(255, 255, 255, 0.07) !important;
     border: none;
 }
 .theme-dark .guildsWrapper-5TJh6A .guildsAdd-21_IdK {
@@ -1142,17 +1156,11 @@ svg.linkButtonIcon-Mlm5d6 {
     bottom: 15px;
     background: transparent;
     box-shadow: none;
-    height: auto;
-    width: auto;
-    position: fixed !important;
     border: none;
     z-index: 100;
 }
 .theme-dark .guildsWrapper-5TJh6A .guildsAdd-21_IdK:hover .guildsAddInner-1KMFy- {
     color: #fff;
-}
-.theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr {
-    height: calc(100vh - 93px);
 }
 .theme-dark .guildsWrapper-5TJh6A span.guildsAddInner-1KMFy- {
     font-size: 32px;
