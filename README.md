@@ -8,4 +8,4 @@ To use this, import it with
 This will fetch the latest version from this repo every time.
 
 ### Variables:
-See [the EnhancedDiscord style.css](https://github.com/joe27g/EnhancedDiscord/blob/beta/plugins/style.css) for a list of CSS variables used in this theme.
+See [the EnhancedDiscord style.css](https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/style.css) for a list of CSS variables used in this theme.
