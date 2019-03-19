@@ -1114,21 +1114,6 @@ svg.linkButtonIcon-Mlm5d6 {
     background: rgba(255, 255, 255, 0.07) !important;
     border: none;
 }
-.theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig {
-    left: 273px;
-    bottom: 5px;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    z-index: 100;
-}
-.theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig:hover .plus-3UqSQu {
-    color: #fff;
-}
-.theme-dark .wrapper-1Rf91z span.plus-3UqSQu {
-    font-size: 32px;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 /* user card */
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6, .footer-2J5zqP {
