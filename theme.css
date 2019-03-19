@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.7.1 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.2 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -23,14 +23,13 @@ body, .appMount-3lHmkl {
 }
 /* backgrounds + scrollbars */
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
-.channels-wrap, .theme-dark .members-1998pB,
+.channels-wrap, .theme-dark .members-1998pB, .theme-dark .container-3gCOGc,
 .theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z,
-.theme-dark .container-3gCOGc,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
 .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .activityFeed-HeiGwL,
-.themeDark-3Ap_7i,
+.themeDark-3Ap_7i, .theme-dark .pageWrapper-1PgVDX, .theme-dark .wrapper-39oAo3,
 
 .theme-dark .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd .messages-3amgkR::-webkit-scrollbar-track-piece,
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
@@ -59,7 +58,8 @@ body, .appMount-3lHmkl {
 .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
-.theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
+.theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb {
@@ -159,6 +159,18 @@ body, .appMount-3lHmkl {
 .btn-friends svg {
     color: var(--accent-color);
 }
+.theme-dark .searchBar-6Kv8R2 {
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: none;
+}
+
+/* verified server discovery */
+.bg-AYqtMd {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.searchBar-2_Yu-C.searchBarComponent-32dTOx {
+    background: rgba(255, 255, 255, 0.1);
+}
 
 /* chat area */
 .attachButton-1UjEWA {
@@ -188,6 +200,9 @@ body, .appMount-3lHmkl {
 }
 .theme-dark .inner-zqa7da {
     background: transparent;
+}
+.theme-dark .wrapper-39oAo3 {
+    margin: -3px 10px;
 }
 
 /* new/old message bars + typing */
@@ -873,7 +888,7 @@ code.hljs.prolog:before {
 }
 
 /* channel list / DM list */
-.container-PNkimc {
+.container-PNkimc, .privateChannels-1nO12o {
     background: rgba(255, 255, 255, 0.02);
 }
 .channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
@@ -1393,9 +1408,12 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .yearlyNote-3CCz_7, .theme-dark .description-1W0DiL, .attendeeCTA-3ZZQWt {
 	color: rgba(255, 255, 255, 0.5);
 }
-.theme-dark .sidebarRegion-VFTUkN, .theme-dark .standardSidebarView-3F1I7i,
+.theme-dark .standardSidebarView-3F1I7i,
 .theme-dark .contentRegion-3nDuYy, .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background: transparent;
+}
+.theme-dark .sidebarRegion-VFTUkN {
+    background: rgba(255, 255, 255, 0.03);
 }
 .itemDefaultSelected-1UAWLe, .buttonBrandFilled-3Mv0Ra, .switch-3wwwcV.checked-7qfgSb, .barFill-23-gu-, .themeDefault-24hCdX.valueChecked-m-4IJZ, .side-8zPYf6 .itemSelected-1qLhcL {
     background: var(--accent-color);
