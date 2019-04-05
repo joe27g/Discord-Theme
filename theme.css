@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.7.4 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.5 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -24,7 +24,7 @@ body, .appMount-3lHmkl {
 /* backgrounds + scrollbars */
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
 .channels-wrap, .theme-dark .members-1998pB, .theme-dark .container-3gCOGc,
-.theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z,
+.theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z, .theme-dark .activityFeed-1C0EmJ,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .app-19_DXt,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
@@ -162,6 +162,12 @@ body, .appMount-3lHmkl {
 .theme-dark .searchBar-6Kv8R2 {
     background: rgba(255, 255, 255, 0.03);
     box-shadow: none;
+}
+.tabBar-1E2ExX .primary-3j8BhM, .theme-dark .topPill-30KHOu .itemSelected-1qLhcL {
+    background-color: var(--accent-color) !important;
+}
+.tabBar-1E2ExX .primary-3j8BhM:hover, .theme-dark .topPill-30KHOu .itemSelected-1qLhcL:hover {
+    filter: brightness(1.3);
 }
 
 /* verified server discovery */
@@ -1867,22 +1873,26 @@ video.ready-36e6Vk {
     left: 13.5px;
 }
 
-/* activity section */
+/* activity & nitro sections */
 .theme-dark .card-7JP0BX, .theme-dark .header-1RC2Wb, .theme-dark .card-7JP0BX:hover .header-1RC2Wb,
-.carousel-tQMSVK, .carousel-2WxMes {
+.carousel-tQMSVK, .carousel-2WxMes, .theme-dark .outer-2IVh5n, .theme-dark .empty-hejAOj,
+.theme-dark .recentlyPlayedContainer-2F3MqS, .paginationItem-3-iI7C, .theme-dark .separator-1N1EBC,
+.theme-dark .multipleIconWrapper-2TXVB4, .theme-dark .section-3TvauS, .theme-dark .tile-QA_yMc,
+.theme-dark .unwrapped-37iUtM.clickable-nnkAZy:hover, .theme-dark .wrapped-15rg6t {
     background: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .body-SKIE6r, .theme-dark .activityFeed-28jde9,
+.theme-dark .separator-1N1EBC {
+    height: 2px;
+}
+.theme-dark .body-SKIE6r, .theme-dark .activityFeed-28jde9, .theme-dark .inset-GQDQYw,
 .theme-dark .paginationItem-2lUq0s:after, .theme-light .wrapper-2ZbzR9 {
     background: transparent;
 }
-.article-3kb3qm {
+.article-3kb3qm, .theme-dark .itemBackground-2vEldQ {
     background-color: transparent;
 }
-.paginationItem-3-iI7C {
-    background: rgba(255, 255, 255, 0.1);
-}
-.paginationItem-3-iI7C.selectedPage-3cFHgU, .paginationItem-3-iI7C:hover {
+.paginationItem-3-iI7C.selectedPage-3cFHgU, .paginationItem-3-iI7C:hover, .theme-dark .wrapped-15rg6t.clickable-nnkAZy:hover,
+.theme-dark .outer-2IVh5n.interactive-1BeKSi:hover, .theme-dark .popoutContainer-3WC9HR:hover, .theme-dark .tile-QA_yMc:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 .newsLink-38Naqi {
@@ -1898,8 +1908,32 @@ video.ready-36e6Vk {
 .paginationItem-3-iI7C:before {
     background-color: var(--accent-color);
 }
-.theme-dark .emptyState-N8MHmB {
+.theme-dark .footerMain-Z8i6ST {
+    color: rgba(255, 255, 255, 0.85);
+}
+.theme-dark .emptyState-N8MHmB, .theme-dark .colorMuted-HdFt4q, .theme-dark .footerSub-1Jedbi {
     color: rgba(255, 255, 255, 0.5);
+}
+.theme-dark .wrapper-9ppXpy {
+    box-shadow: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.1)
+}
+.theme-dark .categoryHeader-1D7Tqy, .theme-dark .premiumApplicationsHeader-Zmkm5e {
+    border-color: rgba(255, 255, 255, 0.2);
+    border-bottom-width: 3px;
+}
+@media (min-width: 849px) {
+    .theme-dark .itemBackground-2vEldQ:before {
+        /*background: radial-gradient(ellipse at top,rgba(0,0,0,0), var(--popup-background)),linear-gradient(90deg,var(--popup-background) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,var(--popup-background)),linear-gradient(0deg,var(--popup-background) 0,rgba(0,0,0,0) 25%);*/
+        background: rgba(0,0,0,0.5);
+    }
+}
+.theme-dark .gradientOverlayRight-3vMuS8 {
+    margin-right: -1px;
+    background-image: linear-gradient(90deg,rgba(0,0,0,0), var(--popup-background));
+}
+.theme-dark .gradientOverlayLeft-3w159C {
+    background-image: linear-gradient(90deg, var(--popup-background), rgba(0,0,0,0));
 }
 
 /* store section */
