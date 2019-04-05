@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.7.5 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.6 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -95,10 +95,7 @@ body, .appMount-3lHmkl {
     background: rgba(255, 0, 0, 0.2);
 }
 /* checkboxes */
-.checkbox .checkbox-inner span {
-    border-color: rgba(255, 255, 255, 0.5) !important;
-}
-.checkbox .checkbox-inner input:checked+span, .checkbox-1ix_J3[style="background-color: rgb(114, 137, 218); border-color: rgb(114, 137, 218);"] {
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span, .checkbox-1ix_J3[style="background-color: rgb(114, 137, 218); border-color: rgb(114, 137, 218);"] {
     background-color: var(--accent-color) !important;
     border-color: transparent !important;
 }
@@ -1491,6 +1488,12 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
     background-color: var(--accent-color);
+}
+.theme-dark .notches-1sAcEM {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' %3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E")
+}
+.theme-dark .progress-1IcQ3A {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* overlay section */
