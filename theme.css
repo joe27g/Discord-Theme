@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.7.3 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.7.4 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -780,15 +780,16 @@ code.hljs.prolog:before {
 .scroller-2TZvBN {
     background: rgba(255, 255, 255, 0.05);
 }
-.scroller-2FKFPG > div[class=""] {
+.createJoinContainer-2Av064 {
     position: fixed;
     bottom: 0;
     height: 50px;
     width: 50px;
     margin-left: -10px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
 }
-.scroller-2FKFPG > div[class=""] > div, .scroller-2FKFPG > div[class=""] + div > div {
+.theme-dark .circleIconButton-jET_ig {
     background-color: var(--accent-color);
     border:  none;
     color:  #fff;
