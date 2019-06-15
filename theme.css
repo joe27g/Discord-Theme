@@ -71,7 +71,7 @@ body, .appMount-3lHmkl {
 .headerInfo-30uryT+.buttonBrandInvertedDefault-uUmgsD, .lookFilled-1Gx00P.colorBrand-3pXr91, .lookInverted-2D7oAl.colorBrand-3pXr91,
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .headerButtonColor-G7_f-V, .button-3To2tQ,
 .lookInverted-2D7oAl.colorGreen-29iAKY, .buttonInvertedPurple-WtBglX, .lookFilled-1Gx00P.colorGreen-29iAKY,
-.detected-platform-accounts-modal .btn-group .btn-primary, .newMessagesBar-mujexs, 
+.detected-platform-accounts-modal .btn-group .btn-primary, .newMessagesBar-mujexs,
 .lookOutlined-3sRXeN.colorWhite-rEQuAQ, .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6, .lookOutlined-3sRXeN.colorBrand-3pXr91,
 .theme-dark .actionButton-2PeQbJ {
     background-color: var(--accent-color);
@@ -790,6 +790,9 @@ code.hljs.prolog:before {
 }
 
 /* guild list (server list) */
+.wrapper-1Rf91z .scrollerWrap-2lJEkd {
+    contain: layout size !important;
+}
 .wrapper-1Rf91z {
     margin-bottom: 70px;
 }
