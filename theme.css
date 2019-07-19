@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.8.1 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.8.2 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -799,7 +799,7 @@ code.hljs.prolog:before {
 .scroller-2TZvBN {
     background: rgba(255, 255, 255, 0.05);
 }
-.listItem-2P_4kh:nth-last-child(2) {
+.scroller-2TZvBN > .listItem-2P_4kh:nth-last-child(2) {
     position: fixed;
     bottom: -11px;
     height: 53px;
@@ -837,6 +837,12 @@ code.hljs.prolog:before {
 }
 .theme-dark .selected-nT-gM3:before {
     background: var(--unread-color);
+}
+.theme-dark .expandedFolderBackground-2sPsd-.selected-2vZ0oV {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px;
+    margin: -2px;
+    margin-top: 0;
 }
 
 /* member list */
@@ -1009,6 +1015,11 @@ svg.linkButtonIcon-Mlm5d6 {
 }
 
 /* guild dropdown */
+.premiumGuildIcon-BhwtRn { /* guild boosting */
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
 .item-1GzJrl.invite-271nFU > .icon-2doZ3q { /* create invite */
     background-image: var(--gd-invite) !important;
 }
@@ -1062,6 +1073,9 @@ svg.linkButtonIcon-Mlm5d6 {
 .separator-2zcjq8, .label-1Y-LW5 {
     display: none;
 }
+.menu-Sp6bN1 > .item-1GzJrl:first-child:not(.invite-271nFU) {
+    vertical-align: top;
+}
 .item-1GzJrl {
     display: inline-block !important;
     padding: 7px 9px !important;
@@ -1087,7 +1101,7 @@ svg.linkButtonIcon-Mlm5d6 {
     border: none;
     margin: 0 3px 3px 0;
 }
-.status, .theme-dark .status-2s6iDp, .theme-dark .status-2kJpnA,
+.status, .theme-dark .status-2s6iDp, .theme-dark .status-2kJpnA, .theme-dark .status-3DaTVG,
 .channel-2QD9_O.selected-1HYmZZ .status-1ibiUI, .channel-2QD9_O .status-1ibiUI {
     border: none !important;
 }
@@ -1138,11 +1152,11 @@ svg.linkButtonIcon-Mlm5d6 {
 }
 .alt-3btY0e.menu-Sp6bN1 {
     height: 60px !important;
-    width: 240px;
+    width: 300px;
     margin-top: 0px;
 }
 .alt-3btY0e .item-1GzJrl {
-    width: 25%;
+    width: 20%;
     height: 60px;
     padding: 7px !important;
 }
@@ -1175,6 +1189,19 @@ svg.linkButtonIcon-Mlm5d6 {
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 50%;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(7) {position: absolute;background: #007eff;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
+.customStatus-1KPfFb {
+    visibility: hidden;
+}
+.customStatus-1KPfFb svg {
+    visibility: visible;
+    position: absolute;
+    margin-right: 0;
+    top: 22px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 /* add role popout */
@@ -1687,7 +1714,8 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 
 /* popouts */
-.theme-dark .themedPopout-25DgLi, .theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH {
+.theme-dark .themedPopout-25DgLi, .theme-dark .messagesPopoutWrap-1MQ1bW,
+.theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH {
     background: var(--popup-background);
     border: none;
 }
