@@ -197,7 +197,7 @@ body, .appMount-3lHmkl {
     border: none;
     background: rgba(255, 255, 255, 0.05);
     margin: 0;
-    min-height: 70px;
+    min-height: 69px;
 }
 .theme-dark .channelTextArea-rNsIhG {
     border-top: none;
@@ -819,8 +819,7 @@ code, .markup-2BOw-j code.inline {
     position: fixed;
     bottom: -11px;
     height: 53px;
-    width: 50px;
-    margin-left: 2px;
+    width: 52px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.07);
 }
