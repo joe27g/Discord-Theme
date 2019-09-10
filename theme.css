@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.8.5 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.8.6 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* generic changes */
@@ -219,9 +219,8 @@ button[aria-label="Send a gift"] {
 
 /* new/old message bars + typing */
 .theme-dark .typing-2GQL18 {
-    width: auto;
-    left: 0;
-    top: -26px;
+    left: -4px;
+    top: -30px;
     background-color: transparent;
 }
 .typing-2GQL18 > * {
@@ -737,8 +736,17 @@ code, .markup-2BOw-j code.inline {
 .theme-light .title-2Dc-Cb {
     color: var(--accent-color);
 }
-.theme-dark .action-1lSjCi, .theme-light .action-1lSjCi {
+.theme-light .wrapper-2ZbzR9 {
+    border-radius: 10px;
+}
+.theme-light .slide-2pHaq5, .theme-light .wrapper-2ZbzR9 {
+    background: var(--popup-background);
+}
+.theme-dark .action-1lSjCi, .theme-light .footer-3rDWdC {
     background: var(--popup-highlight);
+}
+.regionSelect-3lf4eE .regionSelectInner-24f4Ce {
+    border: none;
 }
 .theme-dark .create-3jownz .actionIcon-2IISM_, .theme-light .create-3jownz .actionIcon-2IISM_,
 .theme-dark .or-3THJsp, .theme-light .or-3THJsp,
@@ -756,15 +764,21 @@ code, .markup-2BOw-j code.inline {
 .cancelButton-RGXhAE:before {
     filter: grayscale(1);
 }
-.theme-light .footer-2yfCgX {
+.theme-light .footer-3rDWdC {
     box-shadow: none;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-.modal-3HD5ck .regionSelect-3lf4eE button {
+.regionSelect-3lf4eE .regionSelectInner-24f4Ce, .regionSelect-3lf4eE button {
     border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.regionSelect-3lf4eE button {
     border-left: none;
 }
-.modal-3HD5ck .regionSelect-3lf4eE:hover button {
+.theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
+.theme-dark .regionSelect-3lf4eE:hover button {
+    border-color: var(--accent-color);
+}
+.theme-dark .regionSelect-3lf4eE:hover button {
     background-color: var(--accent-color);
     border-color: transparent;
 }
@@ -822,6 +836,9 @@ code, .markup-2BOw-j code.inline {
     width: 52px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.07);
+}
+.scroller-2TZvBN > .listItem-2P_4kh:nth-last-child(2) > .pill-3YxEhL {
+    top: 10px;
 }
 .theme-dark .circleIconButton-jET_ig {
     background-color: var(--accent-color);
