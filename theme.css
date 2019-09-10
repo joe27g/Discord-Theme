@@ -213,6 +213,9 @@ body, .appMount-3lHmkl {
 .theme-dark .wrapper-39oAo3 {
     margin: -3px 10px;
 }
+button[aria-label="Send a gift"] {
+    display: none;
+}
 
 /* new/old message bars + typing */
 .theme-dark .typing-2GQL18 {
