@@ -640,6 +640,9 @@ code.hljs.prolog:before {
 .theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline, .theme-dark .message-group .comment-1bsQGU .markup-2BOw-j pre code {
     background: rgba(255, 255, 255, 0.1);
 }
+code, .markup-2BOw-j code.inline {
+    font-family: Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
 .theme-dark .markup-2BOw-j pre {
     background: transparent;
     border: 3px solid rgba(255, 255, 255, 0.2);
