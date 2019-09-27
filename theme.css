@@ -30,6 +30,7 @@ body, .appMount-3lHmkl {
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
 .channels-wrap, .theme-dark .members-1998pB, .theme-dark .container-3gCOGc,
 .theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z, .theme-dark .activityFeed-1C0EmJ,
+.friendsTable-133bsv .friendsTableBody-1ZhKif, .scroller-1JbKMe,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .app-19_DXt, .app-2rEoOp, .panels-j1Uci_,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
@@ -1505,7 +1506,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .yearlyNote-3CCz_7, .theme-dark .description-1W0DiL, .attendeeCTA-3ZZQWt {
     color: rgba(255, 255, 255, 0.5);
 }
-.theme-dark .standardSidebarView-3F1I7i,
+.theme-dark .standardSidebarView-3F1I7i, .sidebarRegionScroller-3MXcoP, .contentRegionScroller-26nc1e,
 .theme-dark .contentRegion-3nDuYy, .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background: transparent;
 }
