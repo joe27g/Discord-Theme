@@ -966,6 +966,9 @@ svg[name="DiscordWordmark"] > path {
     transition: 25ms;
     padding-left: 3px;
 }
+.clickable-2ap7je .header-2o-2hj {
+    background-color: rgba(255, 255, 255, .03);
+}
 .container-PNkimc, .privateChannels-1nO12o {
     background: rgba(255, 255, 255, 0.02);
 }
