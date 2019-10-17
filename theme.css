@@ -1,5 +1,24 @@
-/* EnhancedDiscord Theme v1.8.7 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.9 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
+
+/* default theme settings */
+:root {
+    /* background for the entire window. Almost everything is transparent to this image. */
+    --bg: url(https://i.imgur.com/ybRUHPc.jpg);
+    --bg-overlay: rgba(0, 0, 0, 0.8); /* overlay for the background. Generally, this should darken the picture to make text more readable. */
+    --accent-color: #900; /* color of buttons, misc. text, etc. */
+    --mention-color: #f00; /* color of mention text */
+    --mention-bg: rgba(255, 0, 0, 0.15); /* mention background color */
+    --mention-bgh: rgba(255, 0, 0, 0.4); /* mention backgroung while hovering over it */
+    --link-color: #faa61a; /* color of all links */
+    --link-color-hover: #fad61a; /* color of all links while hovering over them */
+    --tag-color: #fff; /* text color of tags (bot tags and custom) */
+    --tag-bg: rgba(255, 0, 0, 0.3); /* background of tags (bot tags and custom) */
+    --popup-background: #222; /* background of modals, confirmation messages etc. */
+    --popup-highlight: #333; /* color of headers and footers of "popouts" (linked to above) */
+    --context-menu-bg: #333; /* color of context (right-click) menus. */
+    --unread-color: #f00; /* color of unread/selected server indicators. */
+}
 
 /* generic changes */
 html {
@@ -1367,6 +1386,10 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .headerDiscriminator-3fLlCR {
     color: rgba(255, 255, 255, 0.4);
 }
+.theme-dark .bodyInner-245q0L {
+    background: transparent;
+    padding: 0px 0px 10px 0px;
+}
 .theme-dark .note-3kmerW textarea {
     border-bottom: 3px solid rgba(255, 255, 255, 0.1);
     margin-bottom: -10px;
@@ -1513,6 +1536,9 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .sidebarRegion-VFTUkN {
     background: rgba(255, 255, 255, 0.03);
 }
+.scroller-305q3I {
+    background-color: rgba(255, 255, 255, 0.01);
+}
 .itemDefaultSelected-1UAWLe, .buttonBrandFilled-3Mv0Ra, .switch-3wwwcV.checked-7qfgSb, .barFill-23-gu-,
 .themeDefault-24hCdX.valueChecked-m-4IJZ, .side-8zPYf6 .itemSelected-1qLhcL,
 .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
@@ -1578,7 +1604,7 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .item-3T2z1R, .ui-region-selector.ui-input-button {
     border-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .input-cIJ7To:not([name="username"]):not([name="discriminator"]), .theme-dark .checkbox-1ix_J3 {
+.theme-dark .input-cIJ7To:not([name="username"]):not([name="discriminator"]):not(.searchBoxInput-uJtBcv), .theme-dark .checkbox-1ix_J3 {
     border: 2px solid rgba(255, 255, 255, 0.1) !important;
 }
 .theme-dark .input-cIJ7To:hover, .ui-region-selector.ui-input-button:hover {
@@ -1699,6 +1725,15 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 .theme-dark .installationPath-24giJj {
     box-shadow: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* activity feed section */
+.theme-dark .searchBox-3Y2Vi7 {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+.theme-dark .searchResultsContainer-1ma_dc {
+    background-color: var(--popup-background);
 }
 
 /* Library section */
