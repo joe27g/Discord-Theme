@@ -49,7 +49,7 @@ body, .appMount-3lHmkl {
 .bg-h5JY_x, .channels-wrap, .theme-dark .members-1998pB, .theme-dark .container-3gCOGc,
 .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY,
 .theme-dark .friendsTable-133bsv, .theme-dark .wrapper-1Rf91z, .theme-dark .activityFeed-1C0EmJ,
-.friendsTable-133bsv .friendsTableBody-1ZhKif, .scroller-1JbKMe,
+.friendsTable-133bsv .friendsTableBody-1ZhKif, .scroller-1JbKMe, .theme-dark .messagesPopout-24nkyi,
 
 .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .app-19_DXt, .app-2rEoOp, .panels-j1Uci_,
 .theme-dark .layer, .theme-dark .layers, .container-16j22k, .theme-dark .noChannel-Z1DQK7, .theme_dark-2FtE3l,
@@ -1814,6 +1814,9 @@ button.addButton-pcyyf6:hover, .theme-dark .actionButton-VzECiy:hover {
 }
 .theme-dark .header-ykumBX, .theme-dark .messageGroupWrapper-o-Zw7G {
     background: rgba(255, 255, 255, 0.05);
+}
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    border: none;
 }
 .theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
     background: transparent;
