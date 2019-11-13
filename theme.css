@@ -1,4 +1,4 @@
-/* EnhancedDiscord Theme v1.9.1 by Joe 🎸#7070 */
+/* EnhancedDiscord Theme v1.9.2 by Joe 🎸#7070 */
 /* Loosely based on/inspired by Beard's Material Theme. Credit for the images (at the bottom of this file) goes to them. */
 
 /* default theme settings */
@@ -458,12 +458,14 @@ mask[id="62177a3a-fe06-4b77-8322-432af3ad3652"] > rect:last-child {
     padding-left: 10px;
     border-radius: 10px;
 }
-.theme-dark .embedInner-1-fpTo, .theme-dark .invite-18yqGF {
-    background: rgba(0, 0, 0, 0.15);
-    border: none;
+.embedFull-2tM8--, .theme-dark .invite-18yqGF {
+    background: rgba(0, 0, 0, 0.25);
 }
-.theme-dark .message-group .embedPill-1Zntps {
-    background-color: rgba(255, 255, 255, 0.1);
+.embedFull-2tM8-- {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.grid-1nZz7S {
+    padding: 0 12px 10px;
 }
 
 /* welcome message */
