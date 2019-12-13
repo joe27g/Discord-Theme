@@ -182,6 +182,10 @@ svg[name="DiscordWordmark"] > path {
     background: var(--trans07);
     height: 60px;
 }
+/* I don't know how this part is derived lol */
+.cardPrimary-1Hv-to { /**/
+    background: var(--trans10);
+}
 /* (activityPanel:activityPanel) (liveBadge:panel) */
 .activityPanel-28dQGo, .panel-24C3ux { /**/
     background: var(--trans10);
@@ -200,6 +204,11 @@ svg[name="DiscordWordmark"] > path {
 /* (leave:menu) */
 .menu-Sp6bN1 { /**/
 	padding: 0;
+}
+/* ---- FRIENDS LIST ---- */
+/* I don't know how this part is derived lol */
+.theme-dark .container-3gCOGc { /**/
+    background: var(--trans02);
 }
 /* ---- MESSAGES ---- */
 /* (botTagCozy:containerCozy) */
