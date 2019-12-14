@@ -214,6 +214,10 @@ svg[name="DiscordWordmark"] > path {
     margin-bottom: -1px;
     padding-top: 1px;
 }
+/* (cardPrimary:cardPrimary) */
+.cardPrimary-1Hv-to { /**/
+    background: var(--trans10);
+}
 /* (activityPanel:activityPanel) (liveBadge:panel) */
 .activityPanel-28dQGo, .panel-24C3ux { /**/
     background: var(--trans10);
@@ -232,6 +236,11 @@ svg[name="DiscordWordmark"] > path {
 /* (leave:menu) */
 .menu-Sp6bN1 { /**/
 	padding: 0;
+}
+/* ---- FRIENDS LIST ---- */
+/* .theme-dark (friendsTable:container) */
+.theme-dark .container-3gCOGc { /**/
+    background: var(--trans02);
 }
 /* ---- MESSAGES ---- */
 /* (botTagCozy:containerCozy) */
