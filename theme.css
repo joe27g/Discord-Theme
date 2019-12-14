@@ -182,7 +182,7 @@ svg[name="DiscordWordmark"] > path {
     background: var(--trans07);
     height: 60px;
 }
-/* I don't know how this part is derived lol */
+/* (cardPrimary:cardPrimary) */
 .cardPrimary-1Hv-to { /**/
     background: var(--trans10);
 }
@@ -206,7 +206,7 @@ svg[name="DiscordWordmark"] > path {
 	padding: 0;
 }
 /* ---- FRIENDS LIST ---- */
-/* I don't know how this part is derived lol */
+/* .theme-dark (friendsTable:container) */
 .theme-dark .container-3gCOGc { /**/
     background: var(--trans02);
 }
