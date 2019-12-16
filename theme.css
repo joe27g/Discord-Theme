@@ -945,7 +945,7 @@ code, .markup-2BOw-j code.inline {
     opacity: 0.6;
 }
 /* replacing default discord logo - credit for these images goes to preston#4985 */
-svg[name="DiscordWordmark"] {
+.titleBar-AC4pGV svg[name="DiscordWordmark"] {
     padding: 0;
     height: 13px !important;
     width: 136px !important;
