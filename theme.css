@@ -80,7 +80,7 @@ body {
     padding-top: 4px;
     background: var(--trans10);
 }
-svg[name="DiscordWordmark"] {
+.titleBar-AC4pGV svg[name="DiscordWordmark"] {
     padding: 0;
     height: 13px !important;
     width: 136px !important;
