@@ -88,7 +88,8 @@ body {
     padding-top: 4px;
     background: var(--trans10);
 }
-svg[name="DiscordWordmark"] {
+/* (titleBar:titleBar) svg[name="DiscordWordmark"] */
+.titleBar-AC4pGV svg[name="DiscordWordmark"] { /**/
     padding: 0;
     height: 13px !important;
     width: 136px !important;
@@ -97,7 +98,8 @@ svg[name="DiscordWordmark"] {
     margin-top: 1px;
     margin-left: 17px;
 }
-svg[name="DiscordWordmark"] > path {
+/* (titleBar:titleBar) svg[name="DiscordWordmark"] > path */
+.titleBar-AC4pGV svg[name="DiscordWordmark"] > path { /**/
     display: none;
 }
 /* (wordmark:wordmark) */
