@@ -8,4 +8,4 @@ To use this, import it with
 This will fetch the latest version from this repo (with a `Content-Type: text/css` header that allows it to load normally.)
 
 ### Variables:
-See [the first few lines of the theme](/blob/v2/theme.css#L4-L16) for a list of CSS variables used in this theme.
+See [the first few lines of the theme](/theme.css#L4-L16) for a list of CSS variables used in this theme.
