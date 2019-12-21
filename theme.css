@@ -423,6 +423,10 @@ body {
     background: rgba(69, 69, 69, 0.25);
     border: none;
 }
+/* (attachment:cancelButton), (attachment:downloadButton), (attachment:metadata) */
+.cancelButton-3hVEV6, .downloadButton-23tKQp, .metadata-3WGS0M { /**/
+    color: var(--trans50);
+}
 /* (embedFull:embedFull) */
 .embedFull-2tM8-- { /**/
     background: rgba(69, 69, 69, 0.15);
