@@ -639,6 +639,12 @@ body {
 .themedPopout-1TrfdI .footer-1K57q_ { /**/
     background-color: var(--popup-highlight);
 }
+/* .theme-dark (hasMoreButton:hasMoreButton) */
+.theme-dark .hasMoreButton-1MELpI { /**/
+	background-color: var(--accent-back);
+	border: none;
+	color: var(--accent);
+}
 /* ---- EMOJI PICKER ---- */
 /* (emojiPicker:emojiPicker), (emojiPicker:emojiPicker) (emojiPicker:category) */
 .emojiPicker-3m1S-j, .emojiPicker-3m1S-j .category-2U57w6 { /**/
@@ -651,6 +657,19 @@ body {
 /* (emojiPicker:emojiPicker) (emojiPicker:categories) (emojiPicker:selected) */
 .emojiPicker-3m1S-j .categories-1feg4n .selected-39BZ4S { /**/
     border-bottom-color: var(--accent);
+}
+/* ---- GIF PICKER ---- */
+/* .theme-dark (categoryFadeBlurple:categoryFadeBlurple) */
+.theme-dark .categoryFadeBlurple-1j72_A { /**/
+    background-color: var(--accent-back);
+}
+/* .theme-dark (categoryFadeBlurple:categoryFadeBlurple):hover */
+.theme-dark .categoryFadeBlurple-1j72_A:hover { /**/
+    background-color: var(--accent-back-bright);
+}
+/* .theme-dark ([focused,result]:focused):after, .theme-dark ([focused,result]:result):hover:after */
+.theme-dark .focused-1En8bG:after, .theme-dark .result-3w1ZcL:hover:after { /**/
+	box-shadow: inset 0 0 0 2px var(--accent);
 }
 /* ---- MODALS ---- */
 /* .theme-dark (footer:modal) */
@@ -683,6 +702,10 @@ body {
 /* (uploadModal:uploadModal) (uploadModal:icon):not((uploadModal:image)) */
 .uploadModal-2ifh8j .icon-kyxXVr:not(.image-2yrs5j) { /**/
     filter: invert(0.8);
+}
+/* .theme-dark (focusLock:root) */
+.theme-dark .root-1gCeng { /**/
+	background-color: var(--popup-background);
 }
 /* ---- NEW SERVER MODAL ---- */
 /* (modal:modal) .theme-light */
@@ -1000,6 +1023,15 @@ rect[mask="url(#svg-mask-status-streaming)"] {
 [mask="url(#svg-mask-status-offline)"] {
     mask: url(#svg-mask-status-online) !important;
 }
+/* .theme-dark (selectOpen:popout) */
+.theme-dark .popout-2sKjHu { /**/
+	border: none;
+	background-color: var(--popup-background);
+}
+/* .theme-dark (selectOpen:lookFilled)(selectOpen:select):hover(selectOpen:selectOpen), .theme-dark (selectOpen:lookFilled)(selectOpen:selectOpen), .theme-dark (selectOpen:lookFilled)(selectOpen:select):focus */
+.theme-dark .lookFilled-1h1y05.select-1Pkeg4:hover.selectOpen-hQuR6b, .theme-dark .lookFilled-1h1y05.selectOpen-hQuR6b, .theme-dark .lookFilled-1h1y05.select-1Pkeg4:focus { /**/
+	border-color: var(--accent);
+}
 /* ---- SETTINGS ---- */
 /* TODO: any modules to get these classes? */
 .css-15ejc46-control, .css-13kbzi0-control, .css-1yegjoj-control {
@@ -1316,6 +1348,9 @@ rect[mask="url(#svg-mask-status-streaming)"] {
 /* (wanderingCubesItem:wanderingCubesItem) */
 .wanderingCubesItem-WPXqao { /**/
     background-color: var(--accent);
+}
+::selection {
+	background-color: var(--trans15);
 }
 
 :root {
