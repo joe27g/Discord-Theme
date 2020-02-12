@@ -170,6 +170,7 @@ body {
 /* (unreadMentionsBar:scroller) */
 .scroller-2TZvBN { /**/
     background: var(--trans05);
+    contain: size; /* So stuff like the fixed bottom button underneath server list works */
 }
 /* (activityPanel:guilds) */
 .guilds-1SWlCJ { /**/
