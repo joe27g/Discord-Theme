@@ -517,6 +517,10 @@ body {
 .after_inlineCode-1KfVgj, .before_inlineCode-1G9rTK, .inlineCode-2ngu6Y { /**/
     background-color: var(--trans10);
 }
+/* (markup:markup) code.inline */
+.markup-2BOw-j code.inline { /**/
+    font-size: 84%;
+}
 /* (markup:markup) code */
 .markup-2BOw-j code { /**/
     background-color: var(--trans10);
@@ -1416,6 +1420,33 @@ rect[mask="url(#svg-mask-status-streaming)"] {
 /* (tierMarker:tierMarkerAccomplished), (tierMarker:tierMarkerInProgress) */
 .tierMarkerAccomplished-2MiXeg, .tierMarkerInProgress-24LMzJ { /**/
     background: var(--popup-background) !important;
+}
+/* ---- CONNECTING ---- */
+/* (problems:container) */
+.container-16j22k.fixClipping-3qAKRb { /**/
+    display: block;
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    margin: 20% calc(50% - 175px);
+    padding: 20px;
+    background-color: var(--popup-background);
+    box-shadow: 0 0 19px var(--accent);
+}
+/* (problems:problems)(problems:slideIn) */
+.problems-3mgf6w.slideIn-sCvzGz { /**/
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    padding: 0;
+    margin-top: 20px;
+}
+/* video(problems:ready) */
+video.ready-36e6Vk { /**/
+    margin: -30px;
 }
 /* ---- MISC ---- */
 /* (botTagRegular:botTagRegular), (botTagRegular:botTagInvert) */
