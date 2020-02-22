@@ -14,6 +14,8 @@
     --popup-highlight: #333; /* color of headers and footers of modals and popouts */
     --unread-color: var(--accent-bright); /* color of unread/selected server indicators. */
     --typing-height: 25px; /* height of typing element and margin underneath chat to allow space for it. */
+    --gift-button: none; /* nitro gift button in chat */
+    --gif-picker: flex; /* gif picker button in chat */
 
     --trans02: rgba(255, 255, 255, 0.02);
     --trans03: rgba(255, 255, 255, 0.03);
@@ -381,6 +383,14 @@ body {
 .wrapper-39oAo3 { /**/
     margin: 4px 10px;
     width: calc(100% - 35px);
+}
+/* (textAreaSlate:buttonContainer) */
+.buttonContainer-28fw2U { /**/
+    display: var(--gif-picker);
+}
+/* (lookLink:button)[aria-label="Send a gift"] */
+.button-38aScr[aria-label="Send a gift"] { /**/
+    display: var(--gift-button);
 }
 /* ---- SEARCH ---- */
 /* (searchBar:searchBar) */
