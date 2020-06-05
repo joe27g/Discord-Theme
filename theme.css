@@ -1066,9 +1066,6 @@ rect[mask="url(#svg-mask-status-dnd)"] {
 rect[mask="url(#svg-mask-status-streaming)"] {
     fill: #593695 !important;
 }
-[mask="url(#svg-mask-status-offline)"] {
-    mask: url(#svg-mask-status-online) !important;
-}
 /* .theme-dark (selectOpen:popout) */
 .theme-dark .popout-2sKjHu { /**/
 	border: none;
