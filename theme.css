@@ -94,18 +94,19 @@ body {
     padding-top: 4px;
     background: var(--trans10);
 }
-/* (titleBar:titleBar) svg[name="DiscordWordmark"] */
-.titleBar-AC4pGV svg[name="DiscordWordmark"] { /**/
+/* (wordmark:wordmark) > svg */
+.wordmark-2iDDfm > svg { /**/
     padding: 0;
     height: 13px !important;
     width: 136px !important;
     background-image: var(--ed-text);
     background-size: 135px;
+    opacity: 0.5;
     margin-top: 1px;
     margin-left: 17px;
 }
-/* (titleBar:titleBar) svg[name="DiscordWordmark"] > path */
-.titleBar-AC4pGV svg[name="DiscordWordmark"] > path { /**/
+/* (wordmark:wordmark) > svg > path */
+.wordmark-2iDDfm > svg > path { /**/
     display: none;
 }
 /* (wordmark:wordmark) */
