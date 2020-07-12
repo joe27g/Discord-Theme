@@ -773,7 +773,7 @@ body {
 }
 /* .theme-dark (focusLock:root) */
 .theme-dark .root-1gCeng { /**/
-	background-color: var(--popup-background);
+	background-color: var(--popup-background) !important;
 }
 /* ---- NEW SERVER MODAL ---- */
 /* .theme-dark ([wrapper,size]:wrapper) */
