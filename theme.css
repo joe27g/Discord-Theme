@@ -16,6 +16,7 @@
     --typing-height: 25px; /* height of typing element and margin underneath chat to allow space for it. */
     --gift-button: none; /* nitro gift button in chat */
     --gif-picker: flex; /* gif picker button in chat */
+    --discovery: flex; /* server discovery button under server list */
 
     --trans02: rgba(255, 255, 255, 0.02);
     --trans03: rgba(255, 255, 255, 0.03);
@@ -52,6 +53,7 @@
     --background-message-hover: transparent;
     --background-floating: var(--popup-background);
     --background-secondary-alt: var(--popup-highlight);
+    --background-accent: var(--trans10);
 }
 /* ---- BACKGROUND ---- */
 html {
@@ -208,6 +210,10 @@ body {
 /* (circleIconButton:circleIconButton)(circleIconButton:selected) */
 .circleIconButton-jET_ig.selected-ugP_am { /**/
     background-color: var(--accent);
+}
+/* div[aria-label="Servers"] + (circleIconButton:tutorialContainer) + (circleIconButton:listItem) */
+div[aria-label="Servers"] + .tutorialContainer-SGrQ1h + .listItem-2P_4kh { /**/
+    display: var(--discovery);
 }
 /* ([wrapper,item]:item) */
 .item-2hkk8m { /**/
