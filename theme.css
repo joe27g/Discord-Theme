@@ -700,31 +700,21 @@ body {
 	color: var(--accent);
 }
 /* ---- EMOJI PICKER ---- */
-/* (positionContainer:contentWrapper) */
-.contentWrapper-2txmjs { /**/
+/* (positionContainer:contentWrapper), (categorySection:header) */
+.contentWrapper-SvZHNd, .header-ywPcAE { /**/
     background-color: var(--popup-background);
-    padding-top: 0;
-    grid-row-gap: 0;
-    grid-template-rows: 40px auto;
 }
 /* (positionContainer:nav) */
-.nav-2KnmHb { /**/
+.nav-7UD0KD { /**/
     background-color: var(--popup-highlight);
     padding: 8px 16px 16px 8px;
     height: 24px;
-}
-/* (emojiPicker:emojiPicker) */
-.emojiPicker-3PwZFl { /**/
-    border-radius: 0;
+    margin-top: -16px;
 }
 /* (emojiPicker:header) */
 .header-8ilj5e { /**/
     background-color: var(--popup-highlight);
     padding-left: 6px !important;
-}
-/* (categoryWrapper:categoryWrapper) */
-.categoryWrapper-UZ5YNj { /**/
-    background-color: var(--popup-background);
 }
 /* ---- GIF PICKER ---- */
 /* ([header,backButton,searchBar]:header) */
